@@ -7,16 +7,16 @@ import express from 'express'
 import cors from 'cors'
 
 //Reads and stores input
-var argv = minimist(process.argv.slice(2));
+var args = minimist(process.argv.slice(2));
 
 //Set the port to be the value passed in. If there's not one, then default it to 5000
-const port = argv.port || 5000;
+const port = args.port || 5000;
 
 //This constant will do much of the heavy lifting for the program
-const app = express();
+const app = express()
 
 //Provide security against cross-origin requests
-app.use(cors());
+app.use(cors())
 
 //Provide the means to parse the body
 app.use(express.json());
