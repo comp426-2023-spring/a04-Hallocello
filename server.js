@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //Begin with required import statements
 import {rps_function, rpsls_function} from './lib/server.js'
 import minimist from 'minimist'
