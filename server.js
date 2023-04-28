@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 //Begin with required import statements
-import {rps_function, rpsls_function} from './lib.rpsls.js'
+import {rps_function, rpsls_function} from './lib.server.js'
 import minimist from 'minimist'
 import express from 'express'
 import cors from 'cors'
